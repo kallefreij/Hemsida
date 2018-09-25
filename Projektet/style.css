@@ -28,7 +28,7 @@ header{
 .content{
     padding: 15px;
     height: 100vh;
-    background-color: rgb(107, 103, 103);
+    background-color: rgb(209, 209, 209);
     background-size: cover;
 }
 fieldset{
@@ -74,4 +74,45 @@ fieldset{
         letter-spacing: 20px;
         margin-bottom: -30px;
     }
+}
+
+/*Styling for skill bars*/
+
+.skills{
+    width: 100%;
+    height:500px;
+}
+
+.stapel{
+    width: 250px;
+    height: 30px;
+    background-color: rgb(165, 165, 165);
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+.kunskap{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(127, 202, 127);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.kunskapProcent{
+    line-height: 30px;
+    text-align: center;
+}
+
+.rubrikSkill{
+    margin-left: 30px;
+}
+
+.shadow{
+    box-shadow: 5px 5px 10px rgb(85, 84, 84);
+}
+
+/*Styling for tables*/
+
+#list_item{
+    background-color: black;
 }
