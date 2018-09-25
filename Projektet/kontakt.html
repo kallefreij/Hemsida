@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Arbete</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class = "nav_pos">
+                    <ul>
+                        <li><a href = "index.html">Start</a></li>
+                        <li><a href = "om_oss.html">Om oss</a></li>
+                        <li><a href = "portfolie.html">Portfolie</a></li>
+                        <li><a href = "kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class ="content">
+            <h1>Hitta oss</h1>
+            <h2>Vi befinner oss i Novahuset vid Örebro Universitet:</h2>
+
+            <fieldset>
+                    <legend>
+                        Lämna gärna dina synpunkter
+                    </legend>
+                    <label>
+                        Name:
+                        <input type = "text" name = "name" size = "20" maxlength = "50">
+                    </label>
+                    <br />
+                    <label>
+                        Email:
+                        <input type = "email" name = "email" size = "30" maxlength = "50">
+                    </label>
+                    <br />
+                    <label>
+                        Telefon:
+                        <input type = "text" name = "telefon" size = "30" maxlength = "50">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Vi vill gärna ha dina synpunkter!
+                    </legend>
+                    <label for = "comments">
+                        Synpunkter:
+                    </label>
+                    <br />
+                    <textarea rows = "5" cols = "50" id = "comments">
+                    </textarea>
+                    <input type = "submit" value  ="Skicka in"/>
+                    <br />
+                    <label>
+                    <input type = "checkbox" name = "subscribe" checked = "checked"/>
+                    Ja, jag vill ha nyhetsberv skickade till min mail.
+                    </label>
+
+
+                </fieldset>
+            
+            <div class = "karta">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039.6937621854665!2d15.243878957081177!3d59.25455764890171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c145b713177e1%3A0xb58158694ee8b2cd!2sNovahuset+%C3%96rebro+Universitet!5e0!3m2!1ssv!2sse!4v1537785461975"
+                 width="600"
+                  height="450"
+                   frameborder="0"
+                    style="border:0"
+                     allowfullscreen>
+                    </iframe>
+            </div>
+            
+            </div>
+           
+        <script src  ="script.js"></script>
+    </body>
+</html>
