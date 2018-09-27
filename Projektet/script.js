@@ -78,7 +78,13 @@ $(document).ready(() => {
     loadJSON();
 });
 
+       
+
+     
+    var start = true;
+    var pausKnapp = document.getElementById("paus");
     var index = 0;
+    var interval = setInterval(rullaBilder, 2000);
 
     var bilder = ["img/bild1.jpg",
                   "img/bild2.jpg",
@@ -87,13 +93,31 @@ $(document).ready(() => {
 
             function rullaBilder(){
                 var img = document.getElementById("bildspel1");
+                pausKnapp.innerHTML = 'Paus';
+                start = true;
+                interval;
                 img.setAttribute("src", bilder[index]);
                 index++;
                 if(index === bilder.length){
                     index = 0;
                 }
             }
-
-            function startaBildspel(){
-                setInterval(rullaBilder, 1000);
+            function pausaBildspel(){
+                pausKnapp.innerHTML = 'Start';
+                start = false;
+                clearInterval(interval);
             }
+            
+            pausKnapp.onclick = 
+            function(){
+                if(start){
+                    pausaBildspel()
+                    start = false;
+                    }
+                   
+                }
+            
+
+            //function startaBildspel(){
+              //  setInterval(rullaBilder, 1000);
+            //}
