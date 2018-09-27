@@ -21,7 +21,8 @@
        height: 80px;
        background-color:rgb(236, 236, 236);
     }
-    
+   
+     
     .background{
         height: 100vh;
         background-image: url("img/sea.jpg");
@@ -183,7 +184,7 @@
 @media screen and (max-width:768px){
 
     .content{
-        background-color: rgb(177, 50, 50);
+        background-color: rgb(173, 89, 89);
         width: 100%;
         }
 
@@ -192,6 +193,7 @@
         /*font-weight: 700;
         letter-spacing: 10px;*/
     }
+   
         
     .text2{
         font-size: 100%;
