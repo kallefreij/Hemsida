@@ -113,6 +113,7 @@ $(document).ready(() => {
                 if(start){
                     pausaBildspel()
                     start = false;
+                    pausKnapp.innerHTML
                     }
                    
                 }
