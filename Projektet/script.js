@@ -121,3 +121,15 @@ $(document).ready(() => {
             //function startaBildspel(){
               //  setInterval(rullaBilder, 1000);
             //}
+
+            function validateForm() {
+                var fornamn = document.forms["mainForm"]["fNamn"].value;
+                var efternamn = document.forms["mainForm"]["eNamn"].value;
+                if (fornamn == "") {
+                    alert("Du måste fylla i ditt förnamn");
+                    return false;
+                } else if(efternamn == ""){
+                    alert("Du måste fylla i ett efternamn");
+                    return false;
+                }
+            }
