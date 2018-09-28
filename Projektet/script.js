@@ -76,6 +76,17 @@ $(document).ready(() => {
         );
     }
     loadJSON();
+
+    var knapp = document.getElementsByClassName("knapp");
+    var hej = document.getElementsByClassName("dropdown");
+
+    $(knapp).click(function(){
+        $(hej).animate({
+            height: 'toggle'
+        });
+    });
+
+
 });
 
        

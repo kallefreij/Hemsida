@@ -5,7 +5,7 @@
         margin: 0;
     }
 
-    li{
+    .lista_li{
         float: left;
         list-style: none;
         margin-left: 20px;
@@ -186,6 +186,18 @@
         text-align: center;
     }
 
+    .dropdown{
+        visibility: hidden;
+        background-color:grey;
+        width: 100%;
+        position: Absolute;
+    }
+
+
+    .knapp{
+        display:none;
+    }
+
     /*------------------------------------------------------------------------768px and down-------------------------------*/
 @media screen and (max-width:768px){
 
@@ -196,6 +208,10 @@
     .content{
         background-color: rgb(173, 89, 89);
         width: 100%;
+    }
+
+    .lista{
+        visibility: hidden;
     }
 
     .text1{
@@ -250,5 +266,20 @@
         width: 100%;
         height: 250px;
     }
+
+    .dropdown{
+        visibility: visible;
+    }
+
+    nav_burger{
+        visibility: visible;
+    }
+
+    .knapp{
+        display: inline-block;
+        top:50%;
+        right:80%;
+    }
+    
 
     }
