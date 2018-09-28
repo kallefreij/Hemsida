@@ -189,10 +189,14 @@
     /*------------------------------------------------------------------------768px and down-------------------------------*/
 @media screen and (max-width:768px){
 
+    body{
+        background-color: rgb(177, 255, 255);
+    }
+
     .content{
         background-color: rgb(173, 89, 89);
         width: 100%;
-        }
+    }
 
     .text1{
         font-size: 100%;
@@ -206,12 +210,45 @@
     }
 
     .karta{
-        visibility: hidden;
+        /*visibility: hidden;*/
+        
     }
 
     .stapel{
-        width: 100%;
+        width: 90%;
         height: 30px;
+        margin-left:20px;
+    }
+
+    .img_oss{
+        width: 100%;
+        height: 400px;
+    }
+
+    .presentation{
+        width: 100%;
+        height: 350px;
+        margin: 0px;
+    }
+
+    .presentation_bild{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .presentation_text{
+        width: 100%;
+        height: 100px;
+    }
+
+    #bildspel1{
+        width: 100%;
+        height: 250px;
+    }
+
+    .bildspel{
+        width: 100%;
+        height: 250px;
     }
 
     }

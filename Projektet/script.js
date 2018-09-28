@@ -41,7 +41,7 @@ $(document).ready(() => {
       
         var i = 0;
         items.forEach((item) => {
-            if(i === 4){
+            if(i === 5){
                 return;
             }
             
