@@ -179,7 +179,6 @@ $(document).ready(() => {
                 }else if(vaild.test(number)== false){
                     alert("inte ett giltigt telfonnummer");
                 }
-<<<<<<< HEAD
 
             }
 
@@ -209,6 +208,3 @@ $(document).ready(() => {
                 }
                 
             }
-=======
-            }
->>>>>>> c15d973d497f9a6224f8e279fdd6b4f244c1703e
