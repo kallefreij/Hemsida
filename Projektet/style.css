@@ -303,6 +303,8 @@
 
     .karta{
         /*visibility: hidden;*/
+        width: 100%;
+        padding: 0px;
         
     }
     #martin{
@@ -359,8 +361,9 @@
 
     .knapp{
         display: inline-block;
-        top:50%;
-        right:80%;
+        position: absolute;
+        right:10%;
+        top:2%;
     }
     
 
