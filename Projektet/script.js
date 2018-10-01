@@ -104,7 +104,7 @@ $(document).ready(() => {
 
             function rullaBilder(){
                 var img = document.getElementById("bildspel1");
-                pausKnapp.innerHTML = 'Paus';
+                pausKnapp.innerHTML = 'Stop';
                 start = true;
                 interval;
                 img.setAttribute("src", bilder[index]);
@@ -114,7 +114,7 @@ $(document).ready(() => {
                 }
             }
             function pausaBildspel(){
-                pausKnapp.innerHTML = 'Start';
+                pausKnapp.innerHTML = '';
                 start = false;
                 clearInterval(interval);
             }

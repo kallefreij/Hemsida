@@ -1,71 +1,93 @@
 <!doctype html>
 
-<html>
+<html lang="sv">
     <head>
         <title>Arbete</title>
+        <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
         <link rel="stylesheet" href="style.css"/>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,intial-scale=1.0">
     </head>
     <body>
-            <header>
-                    <nav>
-                        <div class = "nav_pos">
-                            <ul class="lista">
-                                <li class="lista_li"><a href = "index.html">Start</a></li>
-                                <li class="lista_li"><a href = "om_oss.html">Om oss</a></li>
-                                <li class="lista_li"><a href = "portfolie.html">Portfolie</a></li>
-                                <li class="lista_li"><a href = "kontakt.html">Kontakt</a></li>
-                            </ul>
-                            <button class="knapp"><img class = "nav_burger" src="img/nav.png" alt="nav"></button>
-                                    
-                        </div>
-                    </nav>
-                </header>
-                <div class="dropdown">
-                    <ul class = "dropdown_ul">
-                        <li class ="dropdown_li"><a href = "index.html">Start</a></li>        
-                        <li class ="dropdown_li"><a href = "om_oss.html">Om oss</a></li>
-                        <li class ="dropdown_li"><a href = "portfolie.html">Portfolie</a></li>
-                        <li class ="dropdown_li"><a href = "kontakt.html">Kontakt</a></li>
+        <header class="shadow">
+            <nav>
+                <div class = "nav_pos">
+                    <ul class="lista">
+                        <li class="lista_li"><a href = "index.html">Start</a></li>
+                        <li class="lista_li"><a href = "om_oss.html">Om oss</a></li>
+                        <li class="lista_li"><a href = "portfolie.html">Portfolie</a></li>
+                        <li class="lista_li"><a href = "kontakt.html">Kontakt</a></li>
                     </ul>
+                    <button class="knapp"><img class = "nav_burger" src="img/nav.png" alt="nav"></button>
+                                    
                 </div>
-        <div class = "content">
-            <h1>Om Kalle</h1>
-            <p>Text om kalle</p>
-            <p>Text på engalska ska kunna väljas</p>
-            <a href = "martin.html">Om Martin</a>
-            <div class ="skills">
-
-                <h1>SKILLS</h1>
-                    <p class="rubrikSkill">HTML</p>
-                <div class ="stapel shadow">
-                    <div class="kunskap">
-                        <p class="kunskapProcent">80%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class ="skills">
-                        <p class="rubrikSkill">SQL</p>
-                    <div class ="stapel shadow">
-                        <div class="kunskap">
-                            <p class="kunskapProcent">50%</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class ="skills">
-                            <p class="rubrikSkill">Java</p>
-                        <div class ="stapel shadow">
-                            <div class="kunskap">
-                                <p class="kunskapProcent">60%</p>
-                            </div>
-                        </div>      
-                    </div>
-
-            <p> dasj diasjidjaisj djasidj iasjdi jasijdiasj dijasidji asjdijasij dijasidj iasjdijasi jdiasjd ijaisdjiasjd iasjfidjiwj ifjwiajd ijaiwd jiwajid asdijiasd </p>
+            </nav>
+        </header>
+        <div class="dropdown shadow">
+             <ul class = "dropdown_ul">
+                <li class ="dropdown_li"><a href = "index.html">Start</a></li>        
+                <li class ="dropdown_li"><a href = "om_oss.html">Om oss</a></li>
+                <li class ="dropdown_li"><a href = "portfolie.html">Portfolie</a></li>
+                <li class ="dropdown_li"><a href = "kontakt.html">Kontakt</a></li>
+            </ul>
         </div>
+        <div class = "wrapperM">
+            <h1 id = "rubrik">Om Martin Loord</h1>
+            <div class = "bildMartin">
+                <img id = "martin" src = "img/kalle2.jpg" alt="Bild"/>
+                <div class = "textOm">
+                    <strong>Ålder</strong>
+                    <p>25</p>
+                    <strong>Kön</strong>
+                    <p>Man</p>
+                    <strong>Uppväxt</strong>
+                    <p>Gävle</p>
+                    <strong>Sport</strong>
+                    <p>Hockey</p>
+                    <strong>Favorit resemål</strong>
+                    <p>Tokyo</p>
+                    <strong>Förebild</strong>
+                    <p>Steve Jobs</p>
+                    <strong>Favorit bok</strong>
+                    <p>Inferno</p>
+                    <strong>Favorit film</strong>
+                    <p>Forrest Gump</p>
+                    <strong>Mat</strong>
+                    <p>Nasi goreng</p>
+                    <strong>Favorit artist</strong>
+                    <p>KSHMR</p>
+                </div>
+            <p class = "rubrikSpotify">Mina top tre låtar jag lyssnar på just nu</p>
+            </div>
+        <div class = "spotify"><iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A2cP37n7TZEe0oBxCbZu0KA" 
+            allow="encrypted-media"
+            height="300"></iframe>
+            <iframe src="https://open.spotify.com/embed/track/5IZg7Ngm3CTOj9l00YSrt9" 
+            allow="encrypted-media"
+            height="300"></iframe>
+            <iframe src="https://open.spotify.com/embed/track/05LvE6ySn6hEcHdAJ7N19z" 
+            allow="encrypted-media"
+            height="300"></iframe>
+            
+        </div>
+            <h3 class = "rubrikBar">HTML CSS</h3>
+        <div class="wrap progress">
+            <div class="bar progress" id = "bar1">30%</div>
+        </div>
+            <h3 class = "rubrikBar">Java</h3>
+        <div class="wrap progress">
+            <div class="bar progress" id = "bar2">40%</div>
+        </div>
+            <h3 class = "rubrikBar">SQL</h3>
+        <div class="wrap progress">
+            <div class="bar progress" id = "bar3">80%</div>
+        </div>
+            <h3 class = "rubrikBar">Applikationer</h3>
+        <div class="wrap progress">
+            <div class="bar progress" id = "bar4">25%</div>
+        </div>
+        
+    </div>
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src  ="script.js"></script>
     </body>

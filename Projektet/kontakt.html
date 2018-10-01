@@ -1,8 +1,9 @@
 <!doctype html>
 
-<html>
+<html lang="sv">
     <head>
         <title>Arbete</title>
+        <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
         <link rel="stylesheet" href="style.css"/>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,intial-scale=1.0">
@@ -10,7 +11,7 @@
         <script src  ="script.js"></script>
     </head>
     <body>
-            <header>
+            <header class="shadow">
                     <nav>
                         <div class = "nav_pos">
                             <ul class="lista">
@@ -24,7 +25,7 @@
                         </div>
                     </nav>
                 </header>
-                <div class="dropdown">
+                <div class="dropdown shadow">
                     <ul class = "dropdown_ul">
                         <li class ="dropdown_li"><a href = "index.html">Start</a></li>        
                         <li class ="dropdown_li"><a href = "om_oss.html">Om oss</a></li>
@@ -32,7 +33,6 @@
                         <li class ="dropdown_li"><a href = "kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
-        </div>
         <div class ="content">
             <h1>Hitta oss</h1>
             <h2>Vi befinner oss i Novahuset vid Örebro Universitet:</h2>
@@ -41,19 +41,19 @@
                         <form name ="mainForm" onsubmit = "validateAll()">
                       
                           <label for="fname">Förnamn:</label><br />
-                          <input type="text" name="fNamn" placeholder="skriv ditt namn...">
+                          <input type="text" name="fNamn" id="fname" placeholder="skriv ditt namn...">
                       <br />
                           <label for="ename">Efternamn:</label><br />
-                          <input type="text" name="eNamn" placeholder="skriv i ditt efternamn...">
+                          <input type="text" name="eNamn" id="ename" placeholder="skriv i ditt efternamn...">
                       <br />
                           <label for = "email">Email:</label><br />
-                          <input type = "text" name = "eMail" placeholder = "fyll i ditt nummer..">
+                          <input type = "text" name = "eMail" id="email" placeholder = "fyll i ditt nummer..">
                       <br />
                           <label for="telefonnummer">Telefon:</label><br />
-                          <input type="text" name="tNummer" placeholder="skriv i ditt telefonnummer...">
+                          <input type="text" name="tNummer" id="telefonnummer" placeholder="skriv i ditt telefonnummer...">
                       <br />
                           <label for="synpunkter">Synpunkter:</label><br />
-                          <textarea name="subject" placeholder="Write something.."rows = "5" cols = "40"></textarea>
+                          <textarea name="subject" id="synpunkter" placeholder="Write something.." rows = "5" cols = "40"></textarea>
                       <br />
                           <input type="submit" value="Submit">
                       
@@ -68,12 +68,6 @@
                      allowfullscreen>
                     </iframe>
             </div>
-        </div>
-
-        
-
-    </div>
-        
-        
+        </div>      
     </body>
 </html>

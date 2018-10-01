@@ -6,11 +6,24 @@
         margin: 0;
     }
 
+    body{
+    }
+
     .lista_li{
         float: left;
         list-style: none;
         margin-left: 20px;
         line-height: 80px;
+        font-family: 'Assistant', sans-serif;
+        font-size: 18px;
+    }
+
+    .lista_li a{
+        color:rgb(0, 0, 0);
+    }
+
+    .lista_li a:hover{
+        color:rgb(110, 110, 110);
     }
     
     ul li a{
@@ -20,7 +33,7 @@
     header{
        width: 100%;
        height: 80px;
-       background-color:rgb(236, 236, 236);
+       background-color: rgb(236, 236, 236);
     }
    
      
@@ -31,8 +44,7 @@
     }
     
     .content{
-    background-color: rgb(199, 199, 199);
-    width: 1650px;
+    width: 100%;
     margin: 0 auto;
     }
     
@@ -84,6 +96,7 @@
         font-size: 22px;
     
     }
+
     
     @keyframes text{
         0%{
@@ -229,16 +242,14 @@
       }
       .rubrikBar{
         font-family: monospace;
-          padding: 0px;
-          margin: 0px;
+        padding: 0px;
+        margin: 0px;
       }
       .spotify{
-       width: 300;
-      height: 300;
-        padding: 5px auto 5px auto;
+        padding: 5px 0px 5px 0px;
       }
       .rubrikSpotify{
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
     .bildspel{
         width: 500px;
@@ -263,10 +274,19 @@
     }
 
     .dropdown{
+        display:none;
         visibility: hidden;
-        background-color:grey;
+        background-color: rgb(219, 219, 219);
         width: 100%;
         position: Absolute;
+    }
+
+    .dropdown_li{
+        font-size: 18px;
+    }
+
+    .dropdown_li a{
+        font-family: 'Assistant', sans-serif;
     }
 
 
@@ -274,15 +294,15 @@
         display:none;
     }
 
+
     /*------------------------------------------------------------------------768px and down-------------------------------*/
 @media screen and (max-width:768px){
 
     body{
-        background-color: rgb(177, 255, 255);
+
     }
 
     .content{
-        background-color: rgb(173, 89, 89);
         width: 100%;
     }
 
@@ -339,6 +359,7 @@
     .presentation_text{
         width: 100%;
         height: 100px;
+
     }
 
     #bildspel1{
@@ -364,7 +385,7 @@
         position: absolute;
         right:10%;
         top:2%;
+        border: 0px;
+        background-color: rgb(236, 236, 236);
     }
-    
-
-    }
+}
