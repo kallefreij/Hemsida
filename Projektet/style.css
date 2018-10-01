@@ -6,7 +6,9 @@
         margin: 0;
     }
 
-    body{
+    #framsida{
+        background-image: url("img/sea.jpg");
+        background-size: cover;
     }
 
     .lista_li{
@@ -37,11 +39,11 @@
     }
    
      
-    .background{
+    /*.background{
         height: 100vh;
         background-image: url("img/sea.jpg");
         background-size: cover;
-    }
+    }*/
     
     .content{
     width: 100%;
