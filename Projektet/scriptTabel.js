@@ -41,5 +41,49 @@ $(document).ready(() => {
             }
         );
     }
+
+    var contributors = [],
+        object = {};
+
+    function listCon() {
+
+      
+        var p = 0;
+        contributors.forEach((con) => {
+            if(p === 6){
+                return;
+            }
+            
+                
+            
+            var conRow = $(
+                `<tr class="con-row">
+                <td><img src = "${con.avatar_url}"/></td>
+                <td>${con.login}</td>
+                </tr>`
+            );
+            $('#conList').append(conRow);
+                p++;
+         });
+        
+    }
+
+
+    function loadJSON2() {
+        $.getJSON(
+      'https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contributors',
+      (data) => {
+                console.log(data);
+                contributors = data.contributors.map((con) => {
+                    return {
+                        ...con,
+                    };
+                });
+                listCon();
+            }
+        );
+    }
     loadJSON();
+    loadJSON2();
+   
 });
