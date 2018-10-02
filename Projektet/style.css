@@ -1,6 +1,5 @@
 
 /*-----------------------------------------------------------------STOR-SKÄRM-----------------------------------------------------------*/
-
     *{
         padding: 0;
         margin: 0;
@@ -102,6 +101,11 @@
         font-size: 22px;
     
     }
+    /*-------------------------Kalle------------------------*/
+    #bild_kalle{
+        width:100%;
+        height:400px;
+    }
 
     
     @keyframes text{
@@ -113,9 +117,17 @@
             letter-spacing: 20px;
             margin-bottom: -30px;
         }
+
     }
     
     /*Styling for skill bars*/
+
+    #kunskapRubrik{
+        font-family:'Assistant', sans-serif;
+        color:white;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
     
     .skills{
         width: 100%;
@@ -123,24 +135,58 @@
     }
     
     .stapel{
-        width: 250px;
-        height: 30px;
-        background-color: rgb(165, 165, 165);
-        margin-left: 30px;
+        width: 80%;
+        height: 50px;
+        background-color: rgba(155, 155, 155, 0.281);
+        margin: 50px;
         border-radius: 15px;
     }
     
-    .kunskap{
-        width: 50%;
+    #kunskap1{
+        width: 80%;
         height: 100%;
-        background-color: rgb(127, 202, 127);
+        background-color:#fd7473;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    #kunskap2{
+        width: 40%;
+        height: 100%;
+        background-color: #fec951;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    #kunskap3{
+        width: 90%;
+        height: 100%;
+        background-color: #47b8e0;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    #kunskap4{
+        width: 85%;
+        height: 100%;
+        background-color: #9f68d0;
         border-radius: 15px 0px 0px 15px;
     }
     
-    .kunskapProcent{
-        line-height: 30px;
-        text-align: center;
+    .kunskapÄmne{
+        line-height: 50px;
+        text-align: left;
+        margin-left: 10px;
+        color: white;
+        font-family:'Assistant', sans-serif;
+        position: absolute;
     }
+
+    .kunskapProcent{
+        line-height: 50px;
+        text-align: right;
+        margin-right: 10px;
+        color: white;
+        font-family:'Assistant', sans-serif;
+    }
+    
     
     .rubrikSkill{
         margin-left: 30px;
@@ -307,17 +353,17 @@
     }
 
     #left{
-        background-color: blue;
+        background-image: url("img/black.jpg");
         float: left;
         width: 70%;
-        height:700px;
+        height:1035px;
     }
 
     #right{
-        background-color: green;
+        background-color: rgb(43, 255, 0);
         float: left;
         width: 30%;
-        height: 700px;
+
     }
 
 
@@ -360,6 +406,7 @@
     .progress{
         width: 100%;
     }
+
     .stapel{
         width: 90%;
         height: 30px;
