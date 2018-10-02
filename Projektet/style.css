@@ -43,7 +43,15 @@
     .linkMellanOss{
         color: black;
     }
-   
+   .kalleMartin{
+       display: inline;
+       margin: 20px;
+   }
+   .img_oss{
+      
+       width: 300px;
+       height: 300px;
+   }
      
     /*.background{
         height: 100vh;
