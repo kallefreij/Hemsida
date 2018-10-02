@@ -41,19 +41,19 @@
                         <form name ="mainForm" onsubmit = "validateAll()">
                       
                           <label for="fname">Förnamn:</label><br />
-                          <input type="text" name="fNamn" id="fname" placeholder="skriv ditt namn...">
+                          <input type="text"  id="fname" placeholder="skriv ditt namn..." name="fNamn"[forNamn][]>
                       <br />
                           <label for="ename">Efternamn:</label><br />
-                          <input type="text" name="eNamn" id="ename" placeholder="skriv i ditt efternamn...">
+                          <input type="text" id="ename" placeholder="skriv i ditt efternamn..." name="eNamn"[efterNamn][]>
                       <br />
                           <label for = "email">Email:</label><br />
-                          <input type = "text" name = "eMail" id="email" placeholder = "fyll i ditt nummer..">
+                          <input type = "text"  id="email" placeholder = "fyll i ditt nummer.." name = "eMail"[emailInput][]>
                       <br />
                           <label for="telefonnummer">Telefon:</label><br />
-                          <input type="text" name="tNummer" id="telefonnummer" placeholder="skriv i ditt telefonnummer...">
+                          <input type="text" id="telefonnummer" placeholder="skriv i ditt telefonnummer..." name="tNummer"[teleNummer][]>
                       <br />
                           <label for="synpunkter">Synpunkter:</label><br />
-                          <textarea name="subject" id="synpunkter" placeholder="Write something.." rows = "5" cols = "40"></textarea>
+                          <textarea  id="synpunkter" placeholder="Write something.." rows = "5" cols = "40" name="subject"[synPunkter][]></textarea>
                       <br />
                           <input type="submit" value="Submit">
                       
