@@ -2,7 +2,7 @@
 
 <html lang="sv">
     <head>
-        <title>Arbete</title>
+        <title>Kalle</title>
         <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
         <link rel="stylesheet" href="style.css"/>
         <meta charset="utf-8"/>
@@ -10,31 +10,66 @@
     </head>
     <body>
         <header class="shadow">
-            <nav>
-                <div class = "nav_pos">
-                    <ul class="lista">
-                        <li class="lista_li"><a href = "index.html">Start</a></li>
-                        <li class="lista_li"><a href = "om_oss.html">Om oss</a></li>
-                        <li class="lista_li"><a href = "portfolie.html">Portfolie</a></li>
-                        <li class="lista_li"><a href = "kontakt.html">Kontakt</a></li>
-                    </ul>
-                    <button class="knapp"><img class = "nav_burger" src="img/nav.png" alt="nav"></button>
-                                    
+                <nav>
+                    <div class = "nav_pos">
+                        <ul class="lista">
+                            <li class="lista_li"><a href = "index.html">Start</a></li>
+                            <li class="lista_li"><a href = "om_oss.html">Om oss</a></li>
+                            <li class="lista_li"><a href = "portfolie.html">Portfolie</a></li>
+                            <li class="lista_li"><a href = "kontakt.html">Kontakt</a></li>
+                        </ul>
+                        <button class="knapp"><img class = "nav_burger" src="img/nav.png" alt="nav"></button>
+                                
+                    </div>
+                </nav>
+            </header>
+            <div class="dropdown shadow">
+                <ul class = "dropdown_ul">
+                    <li class ="dropdown_li"><a href = "index.html">Start</a></li>
+                    <hr />        
+                    <li class ="dropdown_li"><a href = "om_oss.html">Om oss</a></li>
+                    <hr /> 
+                    <li class ="dropdown_li"><a href = "portfolie.html">Portfolie</a></li>
+                    <hr /> 
+                    <li class ="dropdown_li"><a href = "kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div id="left">
+
+                <h1 id="kunskapRubrik">Kunskaper</h1>
+                
+                <div class="stapel">
+                    <div id="kunskap1">
+                        <p class="kunskapÄmne">HTML</p>
+                        <p class="kunskapProcent">80%</p>
+                    </div>
                 </div>
-            </nav>
-        </header>
-        <div class="dropdown shadow">
-             <ul class = "dropdown_ul">
-                <li class ="dropdown_li"><a href = "index.html">Start</a></li>        
-                <li class ="dropdown_li"><a href = "om_oss.html">Om oss</a></li>
-                <li class ="dropdown_li"><a href = "portfolie.html">Portfolie</a></li>
-                <li class ="dropdown_li"><a href = "kontakt.html">Kontakt</a></li>
-            </ul>
-        </div>
-        <div class = "wrapperM">
-            <h1 id = "rubrik">Om Martin Loord</h1>
-            <div class = "bildMartin">
-                <img id = "martin" src = "img/kalle2.jpg" alt="Bild"/>
+
+                <div class="stapel">
+                    <div id="kunskap2">
+                        <p class="kunskapÄmne">JAVA</p>
+                        <p class="kunskapProcent">40%</p>
+                    </div>
+                </div>
+
+                <div class="stapel">
+                    <div id="kunskap3">
+                        <p class="kunskapÄmne">SQL</p><p class="kunskapProcent">90%</p>
+                        
+                    </div>
+                </div>
+
+                <div class="stapel">
+                    <div id="kunskap4">
+                        <p class="kunskapÄmne">CSS</p>
+                        <p class="kunskapProcent">85%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="right">
+                <img id="bild_kalle" src="img/kalle2.jpg" alt="Bild">
                 <div class = "textOm">
                     <strong>Ålder</strong>
                     <p>25</p>
@@ -42,52 +77,25 @@
                     <p>Man</p>
                     <strong>Uppväxt</strong>
                     <p>Gävle</p>
+                    <br>
+                    <strong>Kalles favoriter...</strong>
+                    <br>
+                    <br>
                     <strong>Sport</strong>
                     <p>Hockey</p>
-                    <strong>Favorit resemål</strong>
+                    <strong>Resemål</strong>
                     <p>Tokyo</p>
-                    <strong>Förebild</strong>
-                    <p>Steve Jobs</p>
-                    <strong>Favorit bok</strong>
+                    <strong>Bok</strong>
                     <p>Inferno</p>
-                    <strong>Favorit film</strong>
+                    <strong>Film</strong>
                     <p>Forrest Gump</p>
                     <strong>Mat</strong>
-                    <p>Nasi goreng</p>
-                    <strong>Favorit artist</strong>
+                    <p>Nasi Goreng</p>
+                    <strong>Artist</strong>
                     <p>KSHMR</p>
                 </div>
-            <p class = "rubrikSpotify">Mina top tre låtar jag lyssnar på just nu</p>
             </div>
-        <div class = "spotify"><iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A2cP37n7TZEe0oBxCbZu0KA" 
-            allow="encrypted-media"
-            height="300"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/5IZg7Ngm3CTOj9l00YSrt9" 
-            allow="encrypted-media"
-            height="300"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/05LvE6ySn6hEcHdAJ7N19z" 
-            allow="encrypted-media"
-            height="300"></iframe>
-            
-        </div>
-            <h3 class = "rubrikBar">HTML CSS</h3>
-        <div class="wrap progress">
-            <div class="bar progress" id = "bar1">30%</div>
-        </div>
-            <h3 class = "rubrikBar">Java</h3>
-        <div class="wrap progress">
-            <div class="bar progress" id = "bar2">40%</div>
-        </div>
-            <h3 class = "rubrikBar">SQL</h3>
-        <div class="wrap progress">
-            <div class="bar progress" id = "bar3">80%</div>
-        </div>
-            <h3 class = "rubrikBar">Applikationer</h3>
-        <div class="wrap progress">
-            <div class="bar progress" id = "bar4">25%</div>
-        </div>
-        
-    </div>
+
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src  ="script.js"></script>
     </body>
