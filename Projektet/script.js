@@ -15,7 +15,7 @@ $(document).ready(() => {
             
             var tableRow = $(
                 `<tr class="item-row">
-                    <td>${item.name}</td>
+                    <td><a href="${item.html_url}">${item.name}</a></td>
                     <td>${item.full_name}</td>
                     <td>${item.watchers}</td>
                 </tr>`
