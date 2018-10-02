@@ -198,10 +198,6 @@
     
     /*Styling for tables*/
     
-    #list_item{
-    
-    }
-    
     td{
         width:500px;
         height: 40px;
@@ -372,10 +368,6 @@
 
     /*------------------------------------------------------------------------768px and down-------------------------------*/
 @media screen and (max-width:768px){
-
-    body{
-
-    }
 
     .content{
         width: 100%;
