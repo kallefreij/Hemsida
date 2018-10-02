@@ -353,15 +353,17 @@
         background-color: grey;
     }
 
-    #left{
+    #body_k{
         background-image: url("img/black.jpg");
+    }
+    #left{
         float: left;
         width: 70%;
-        height:1035px;
+        height: 100%;
     }
 
     #right{
-        background-color: rgb(43, 255, 0);
+        background-color:rgb(236, 236, 236);
         float: left;
         width: 30%;
 
@@ -371,7 +373,20 @@
     /*------------------------------------------------------------------------768px and down-------------------------------*/
 @media screen and (max-width:768px){
 
-  
+    #left{
+        float: none;
+        width: 100%;
+    }
+
+    #right{
+        float: top;
+        width: 100%;
+    }
+
+    #kunskapRubrik{
+        margin-top: 0px;
+    }
+    
 
     .content{
         width: 100%;
@@ -414,7 +429,6 @@
 
     .stapel{
         width: 90%;
-        height: 30px;
         margin-left:20px;
     }
 
