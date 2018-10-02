@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
         <link rel="stylesheet" href="style.css"/>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
     </head>
     <body>
             <header class="shadow">
@@ -50,14 +50,9 @@
                 
             
             <div class = "pictures">
-                <h1>Kalle</h1>
-                <a href = "kalle.html">
-                <img class = "img_oss" src="img/kalle.jpg"  alt ="Bild"/>
-                </a>
-                <h1>Martin</h1>
-                <a href = "martin.html">
-                <img class = "img_oss" src="img/musse.jpg"  alt ="Bild"/>
-                </a>
+                <h1>Kalle</h1><h1>Martin</h1>
+                <a href = "kalle.html"><img class = "img_oss" src="img/kalle.jpg"  alt ="Bild"/></a>
+                <a href = "martin.html"><img class = "img_oss" src="img/musse.jpg"  alt ="Bild"/></a>
             </div>
             <h1>Rådande JS trender:</h1>
             <table id = "itemList">
@@ -67,8 +62,21 @@
                     <td>Stars*</td>
                 </tr>
             </table>
-              </div>
+            <button class ="btn_more">Visa mer</button>
+            <div class="show_more">
+                <table id="conList">
+                    <tr id="con-row">
+                        <td>Bild</td>                        
+                        <td>Contributor</td>
+                    </tr>
+                    <tr><img src="https://avatars1.githubusercontent.com/u/985197?v=4"/> </tr>
+
+                </table>
+            </div>
+        </div>
+            
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src  ="scriptTabel.js"></script>
+        <script src  ="script.js"></script>
     </body>
 </html>
