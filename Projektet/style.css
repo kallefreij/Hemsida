@@ -14,6 +14,11 @@
         background-size: cover;
     }
 
+    .breadtext{
+        font-family: 'Assistant', sans-serif;
+        padding: 10px;   
+    }
+
     .lista_li{
         float: left;
         list-style: none;
@@ -43,15 +48,31 @@
     .linkMellanOss{
         color: black;
     }
-   .kalleMartin{
-       display: inline;
-       margin: 20px;
-   }
-   .img_oss{
-      
-       width: 300px;
-       height: 300px;
-   }
+
+    .kalleDiv{
+        width:50%;
+        float: left;
+    }
+
+    .martinDiv{
+        width:50%;
+        float: left;
+    }
+
+    .img_oss{
+        margin-left: 30%;
+        width: 300px;
+        height: 300px;
+    }
+
+    #kalleBild{
+        float: left;
+        margin-left: 10%;
+    }
+
+    #martinBild{
+        margin-left: 30%;
+    }
      
     .background{
         height: 100vh;
@@ -75,13 +96,6 @@
         padding: 1px;
     }
     
-
-    /*.karta{
-        padding: 10px;
-        width:600px;
-        height:450px;
-        border:0px;
-    }*/
     
     .frontText{
         text-align: center;
@@ -224,13 +238,14 @@
         text-decoration: none;
         text-align: center;
         color: black;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Assistant', sans-serif;
         font-size: 20px;
         margin-bottom: 10px;
     }
 
     .p_portfolie{
         text-align: center;
+        font-family: 'Assistant', sans-serif;
     }
     
     .presentation{
@@ -448,13 +463,23 @@
         margin-left:20px;
     }
 
+    .kalleDiv{
+        width:100%;
+        float: none;
+        margin: 0px;
+    }
+
+    .martinDiv{
+        width:100%;
+        float: none;
+        margin: 0px;
+    }
+
     .img_oss{
-        float: left;
+        margin-left: 0px;
         width: 100%;
         height: 400px;
     }
-
-
 
     .presentation{
         width: 100%;
@@ -503,5 +528,12 @@
     .knapp:onclick{
         border:0px;
         border-width: 0px;
+    }
+}
+
+/*------------------------------------------------------------------------360px and down-------------------------------*/
+@media screen and (max-width:360px){
+    td{
+        font-size:10px;
     }
 }
