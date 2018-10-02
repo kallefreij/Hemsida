@@ -43,3 +43,28 @@ $(document).ready(() => {
     }
     loadJSON();
 });
+
+
+function listCon(){
+    
+}
+
+
+
+
+function loadJSON(){
+    $.getJSON('https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contributors',
+(data) => {
+    console.log(data);
+    contributors = data.contributors.map((con) => {
+        return{
+            ...con,
+        };
+    });
+    listCon();
+    }
+);
+}
+loadJSON();
+
+
