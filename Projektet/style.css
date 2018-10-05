@@ -18,6 +18,9 @@
         font-family: 'Assistant', sans-serif;
         padding: 10px;   
     }
+    .hidden {
+        visibility: hidden;
+    }
 
     .lista_li{
         float: left;
@@ -125,6 +128,12 @@
         color:rgb(78, 104, 126);
         font-size: 22px;
     
+    }
+    .okText{
+        color: rgb(116, 206, 43);
+    }
+    .felText{
+        color: rgb(241, 9, 9);
     }
     /*-------------------------Kalle------------------------*/
     #bild_kalle{

@@ -22,21 +22,24 @@
        
 
      
-    
-            
+  
 
-            //function startaBildspel(){
-              //  setInterval(rullaBilder, 1000);
-            //}
+            
 
             function validateForm() {
                 var fornamn = document.forms["mainForm"]["fNamn"].value;
                 var x = fornamn.length;
                 if (fornamn == "") {
-                    alert("Du måste fylla i ditt förnamn");
+                    $('#felNamn').removeClass('hidden');
+                    $('#okNamn').addClass('hidden');
                     return false;
             }else if (x < 3){
-                alert("ditt namn måste innehålla minst tre bokstäver");
+                $('#okNamn').addClass('hidden');
+                $('#felNamn').removeClass('hidden');
+                return false;
+            }else{
+                $('#felNamn').addClass('hidden');
+                $('#okNamn').removeClass('hidden');
                 return false;
             }
         }
@@ -45,11 +48,17 @@
                 var efternamn = document.forms["mainForm"]["eNamn"].value;
                 var minstTre = efternamn.length;
                 if(efternamn == ""){
-                    alert("Du måste fylla i ett efternamn");
+                    $('#felENamn').removeClass('hidden');
+                    $('#okENamn').addClass('hidden');
                     return false;
                 } else if(minstTre < 3){
-                    alert("ditt efternamn måste innehålla minst tre bokstäver");
+                    $('#felENamn').removeClass('hidden');
+                    $('#okENamn').addClass('hidden');
                 return false;
+                }
+                else{
+                    $('#felENamn').addClass('hidden');
+                    $('#okENamn').removeClass('hidden');
                 }
             }
 
@@ -57,11 +66,17 @@
                 var mail = document.forms["mainForm"]["eMail"].value;
                 var vali = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
                 if(mail == ""){
-                    alert("Fyll i en epost");
+                    $('#felEmail').removeClass('hidden');
+                    $('#okEmail').addClass('hidden');
+                    
                     return false;
                 }else if(vali.test(mail) == false){
-                    alert("Du måste fylla i en giltig emailadress");
+                    $('#felEmail').removeClass('hidden');
+                    $('#okEmail').addClass('hidden');
                     return false;
+                }else{
+                    $('#felEmail').addClass('hidden');
+                    $('#okEmail').removeClass('hidden');
                 }
 
             }
@@ -70,9 +85,14 @@
                 var number = document.forms["mainForm"]["tNummer"].value;
                 var vaild = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
                 if(number == ""){
-                    alert("Skriv in ett telefonnummer");
+                    $('#felTele').removeClass('hidden');
+                    $('#okTele').addClass('hidden');
                 }else if(vaild.test(number)== false){
-                    alert("inte ett giltigt telfonnummer");
+                    $('#felTele').removeClass('hidden');
+                    $('#okTele').addClass('hidden');
+                }else{
+                    $('#felTele').addClass('hidden');
+                    $('#okTele').removeClass('hidden');
                 }
 
             }
@@ -85,21 +105,17 @@
                 }
             }
 
-            function validateAll(){
-                if(validateForm() == false){
-                    return false;
-                }
-                else if(validateENamn() == false){
-                    return false;
-                }
-                else if(validateEmail() == false){
-                    return false;
-                }
-                else if(validateNumber() == false){
-                    return false;
-                }
-                else if(validateText() == false){
-                    return false;
-                }
-                
-            }
+            
+            
+            $('#fname').on('keypress keydown keyup', function(){
+                validateForm();
+            })
+            $('#ename').on('keypress keydown keyup', function(){
+                validateENamn();
+            })
+            $('#email').on('keypress keydown keyup', function(){
+                validateEmail();
+            })
+            $('#telefonnummer').on('keypress keydown keyup', function(){
+                validateNumber();
+            })
