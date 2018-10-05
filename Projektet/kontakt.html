@@ -28,11 +28,11 @@
             <div class="dropdown shadow">
                 <ul class = "dropdown_ul">
                     <li class ="dropdown_li"><a href = "index.html">Start</a></li>
-                    <hr />        
+                          
                     <li class ="dropdown_li"><a href = "om_oss.html">Om oss</a></li>
-                    <hr /> 
+                    
                     <li class ="dropdown_li"><a href = "portfolie.html">Portfolie</a></li>
-                    <hr /> 
+                    
                     <li class ="dropdown_li"><a href = "kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
@@ -41,24 +41,38 @@
             <h2>Vi befinner oss i Novahuset vid Örebro Universitet:</h2>
 
                 <div class="forms">
-                        <form name ="mainForm" onsubmit = "validateAll()">
+                        <form name ="mainForm">
                       
+                         <p> <span id="felNamn" class="felText hidden">Skriv in minst tre tecken.</span>
+                          <span id="okNamn" class="okText hidden">OK</span></p>
                           <label for="fname">Förnamn:</label><br />
-                          <input type="text"  id="fname" placeholder="skriv ditt namn..." name="fNamn"[forNamn][]>
+                          <input type="text"  id="fname" placeholder="skriv i ditt namn..." name="fNamn">
                       <br />
+
+                         <p> <span id="felENamn" class="felText hidden">Skriv in minst tre tecken.</span>
+                          <span id="okENamn" class="okText hidden">OK</span></p>
                           <label for="ename">Efternamn:</label><br />
-                          <input type="text" id="ename" placeholder="skriv i ditt efternamn..." name="eNamn"[efterNamn][]>
+                          <input type="text" id="ename" placeholder="skriv i ditt efternamn..." name="eNamn">
                       <br />
+
+                        <p><span id="felEmail" class="felText hidden">Använd en giltig epostadress, info@exempel.com</span>
+                        <span id="okEmail" class="okText hidden">OK</span></p>
                           <label for = "email">Email:</label><br />
-                          <input type = "text"  id="email" placeholder = "fyll i ditt nummer.." name = "eMail"[emailInput][]>
+                          <input type = "text"  id="email" placeholder = "fyll i din email.." name = "eMail">
                       <br />
+
+                        <p> <span id="felTele" class="felText hidden">Fyll i ett giltigt telefonummer</span>
+                          <span id="okTele" class="okText hidden">OK</span></p>
                           <label for="telefonnummer">Telefon:</label><br />
-                          <input type="text" id="telefonnummer" placeholder="skriv i ditt telefonnummer..." name="tNummer"[teleNummer][]>
+                          <input type="text" id="telefonnummer" placeholder="skriv i ditt telefonnummer..." name="tNummer">
                       <br />
+
+                          <p><span id="felTextFalt" class="felText hidden">Skriv en text</span>
+                          <span id="okTextFalt" class="okText hidden">OK</span></p>
                           <label for="synpunkter">Synpunkter:</label><br />
-                          <textarea  id="synpunkter" placeholder="..." rows = "5" cols = "40" name="subject"[synPunkter][]></textarea>
+                          <textarea  id="synpunkter" placeholder="..." rows = "5" cols = "40" name="subject"></textarea>
                       <br />
-                          <input type="submit" value="Submit">
+                          <input type="submit" value="Submit" onclick="validateText()">
                       
                         </form>
                     </div>
