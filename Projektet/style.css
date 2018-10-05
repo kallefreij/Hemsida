@@ -525,12 +525,6 @@
         background-color: rgb(236, 236, 236);
     }
 
-    .knapp:onclick{
-        border:0px;
-        border-width: 0px;
-    }
-}
-
 /*------------------------------------------------------------------------360px and down-------------------------------*/
 @media screen and (max-width:360px){
     td{
